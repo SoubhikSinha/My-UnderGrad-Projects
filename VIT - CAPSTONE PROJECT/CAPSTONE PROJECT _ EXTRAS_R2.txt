@@ -1,0 +1,162 @@
+REVIEW 2 : EXTRAS
+=================
+
+⚡PROPOSED METHODOLOGY 🔽
+--------------------------
+- An optimizer is an algorithm or function that adapts the neural network's attributes, like learning rate and weights.
+
+- 
+
+- Why using MinMaxScaler ?
+1. When the upper and lower boundaries are well known from domain knowledge.
+2. Scales all the data features in the range [0, 1] or else in the range [-1, 1] if there are negative values in the dataset.
+3. Guarantees all features will have the exact same scale
+
+- Keras
+Keras is an open-source software library that provides a Python interface for artificial neural networks. Keras acts as an interface for the TensorFlow library.Keras is a high-level, deep learning API developed by Google for implementing neural networks. It is written in Python and is used to make the implementation of neural networks easy. It also supports multiple backend neural network computation.
+
+- Keras vs Tensorflow
+TensorFlow is an open-sourced end-to-end platform, a library for multiple machine learning tasks, while Keras is a high-level neural network library that runs on top of TensorFlow. Both provide high-level APIs used for easily building and training models, but Keras is more user-friendly because it's built-in Python.
+
+- 3-Dimensional data
+1. The batch size is a number of samples processed before the model is updated. The number of epochs is the number of complete passes through the training dataset. The size of a batch must be more than or equal to one and less than or equal to the number of samples in the training dataset.
+2. A time step is a single occurrence of the cell
+3. input dimension / input shape : the term says it all
+
+- Rolling Statistics
+A rolling average continuously updates the average of a data set to include all the data in the set until that point.
+
+- Augmented Dickey-Fuller (ADF) Test
+Augmented Dickey Fuller test (ADF Test) is a common statistical test used to test whether a given Time series is stationary or not. It is one of the most commonly used statistical test when it comes to analyzing the stationary of a series.
+
+
+>> De-trending data 🔻(Below 4 only)
+
+➡️ BoxCox Transformation
+Box-Cox transformation is a statistical technique that transforms your target variable so that your data closely resembles a normal distribution.
+
+➡️ Logarithmic Transformation
+The log transformation is often used where the data has a positively skewed distribution (shown below) and there are a few very large values. If these large values are located in your study area, the log transformation will help make the variances more constant and normalize your data.
+
+➡️ Removing trend using Moving Average
+A moving average smoothes a series by consolidating the a days' data-points into longer units of time—namely an average of several days' data.
+
+➡️ Exponential (Decay) transformation
+An exponential transformation is a simple algebraic transformation of a monomial function through variable substitution with an exponential variable.
+
+
+
+- ACF (Auto-Correlation Function)
+It defines how data points in a time series are related, on average, to the preceding data points. In other words, it measures the self-similarity of the signal over different delay times.
+
+- PACF (Partial ACF)
+It gives the partial correlation of a stationary time series with its own lagged values, regressed the values of the time series at all shorter lags. It contrasts with the autocorrelation function, which does not control for other lags.
+
+☠️NOTE : The “I” stands for integrated in ARIMA, which means that the data is stationary.
+
+- Regression equation : It is used in stats to find out what relationship, if any, exists between sets of data.
+
+
+NOTE : For all other components uncovered here - are properly explained in the doc
+
+⚡IMPLEMENTATION 🔽
+--------------------
+✨For both LSTM & RNN --
+
+- The " %matplotlib inline " command tells the IPython environment to draw the plots immediately after the current cell.
+
+- The info() method prints information about the DataFrame. The information contains the number of columns, column labels, column data types, memory usage, range index, and the number of cells in each column (non-null values).
+
+
+
+(RNN) KERAS 🔻🔻🔻
+
+> Sequential : A Sequential model is appropriate for a plain stack of layers where each layer has exactly one input tensor and one output tensor.
+
+> Tensor : A tensor is a generalization of vectors and matrices and is easily understood as a multidimensional array. In the general case, an array of numbers arranged on a regular grid with a variable number of axes is known as a tensor.
+
+> Dense : Keras Dense layer is the layer that contains all the neurons that are deeply connected within themselves. This means that every neuron in the dense layer takes the input from all the other neurons of the previous layer. We can add as many dense layers as required. It is one of the most commonly used layers.
+
+> SimpleRNN : The complete RNN layer is presented as SimpleRNN class in Keras. Each RNN cell takes one data input and one hidden state which is passed from a one-time step to the next.
+
+-------------------------------------------------------------------------------------------
+
+> Dropout : Dropout is a technique where randomly selected neurons are ignored during training. They are “dropped out” randomly. This means that their contribution to the activation of downstream neurons is temporally removed on the forward pass, and any weight updates are not applied to the neuron on the backward pass.
+|
+|=> CODE : 🖥️ model_rnn.add(Dropout(0.2))
+
+➡️ Randomly selecting nodes to be dropped out with a given probability (e.g., 20% or 0.2) in each weight update cycle
+
+✨ DROPOUT Layer is created to reduce the overfitting of neural networks.
+
+-------------------------------------------------------------------------------------------
+
+🖥️ model_rnn.add(SimpleRNN(units = 50,activation = "tanh", return_sequences = True , input_shape = (x_train.shape[1],3))) 🔻
+
+	> Units : The output dimesion of model. Units will be the shape of the models' 	internal state.
+
+	> Return Sequences : Refer to return the hidden state
+
+🖥️ model_rnn.add(Dense(units = 1)) ==> Dense layer feeds all outputs from the previous layer to all its neurons. "Units" -> Positive integer, dimensionality of the output space.
+
+
+🖥️ model_rnn.compile(optimizer = "adam", loss = "mean_squared_error") 🔻
+
+	> optimizer : assists in improving the accuracy and reduces the total loss.
+
+	> Adam is an alternative optimization algorithm that provides more efficient neural 	network weights by running repeated cycles of “adaptive moment estimation.”
+
+
+
+(LSTM) KERAS 🔻🔻🔻
+
+> Sequential : A Sequential model is appropriate for a plain stack of layers where each layer has exactly one input tensor and one output tensor.
+
+> Dense : Keras Dense layer is the layer that contains all the neurons that are deeply connected within themselves. This means that every neuron in the dense layer takes the input from all the other neurons of the previous layer. We can add as many dense layers as required. It is one of the most commonly used layers.
+
+> Units : The output dimesion of model. Units will be the shape of the models' internal state.
+
+> Return Sequences : Refer to return the hidden state
+
+
+
+---------
+| ARIMA |🔻🔻🔻
+---------
+
+- statsmodel -> seasonal decompose :  lets you decompose a time series into trend, seasonality and noise in one line of code.
+
+- statsmodel -> adfuller : ADF (Augmented Dickey-Fuller) Test
+
+- rcparams : Each time Matplotlib loads, it defines a runtime configuration (rc) containing the default styles for every plot element you create.
+
+- 🖥️ rolling_mean = data.rolling(window=12).mean()
+  🖥️ rolling_std = data.rolling(window=12).std()
+  
+Here, the moving average will be calculated by taking those many samples at a time, denoted as 'window=12'.
+
+- In ADF Test, the critical values are already set (as mentioned in the output)
+
+- In ADF Test => t statistic = test statistic (value/outcome of the test)
+
+- In ADF Test => The p value is a number, calculated from a statistical test, that describes how likely you are to have found a particular set of observations if the null hypothesis were true.
+
+- 🖥️ adf = adfuller(ts, autolag='AIC') 🔻
+
+  > Autolag : Method to use when automatically determining the lag length among the values 0, 1, …, maxlag (AIC -> by-default)
+
+- BoxCox Transformation : a statistical technique that transforms your target variable so that your data closely resembles a normal distribution
+
+- Exponential (Decay) Transformation : a process in which a quantity decreases over time, with the rate of decrease becoming proportionally smaller as the quantity gets smaller.
+
+- In PACF => method = 'ols' : regression of time series on lags of it and on constant.
+
+- Persistent model : A forecast that the current value conditions will persist and that future values will be the same as the present.
+
+- Auto-Regressive Model : forecasts future behavior based on past behavior data.
+
+- In ARIMA :
+	
+	> p is the number of autoregressive terms,
+	> d is the number of nonseasonal differences,
+	> q is the number of lagged forecast errors in the prediction equation.

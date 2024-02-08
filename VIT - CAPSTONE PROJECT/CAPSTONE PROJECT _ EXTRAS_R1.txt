@@ -1,0 +1,145 @@
+REVIEW 1 : EXTRAS
+=================
+
+- RMSE (Root Mean Squared Error) : 
+It is the standard deviation of the residuals (prediction errors). Residuals are a measure of how far from the regression line data points are; RMSE is a measure of how spread out these residuals are. In other words, it tells you how concentrated the data is around the line of best fit.
+
+- R-Square (R2) score : 
+“(total variance explained by model) / total variance.” So if it is 100%, the two variables are perfectly correlated, i.e., with no variance at all. A low value would show a low level of correlation, meaning a regression model that is not valid, but not in all cases. Here, the two variables can be assumed to be the testing data values and predicted data values.
+
+NOTE 💥 : Higher R2 score and lower RMSE score --> Better Model
+
+===========================================================================================
+🟩Paper [1] :
+------------
+
+- SVR (Support Vector Regression) : Support Vector Regression is a supervised learning algorithm that is used to predict discrete values. Support Vector Regression uses the same principle as the SVMs. The basic idea behind SVR is to find the best fit line. In SVR, the best fit line is the hyperplane that has the maximum number of points.
+
+- PSO (Particle Swarm Optimization) : The process of finding optimal values for the specific parameters of a given system to fulfill all 
+design requirements while considering the lowest possible cost is referred to as an optimization. PSO uses a number of particles (agents) that constitute a swarm moving around in the search space, looking for the best solution. Each particle in the swarm looks for its positional coordinates in the solution space, which are associated with the best solution that has been achieved so far by that particle. It is known as pbest or personal best.
+
+- ARIMA : An autoregressive integrated moving average, or ARIMA, is a statistical analysis model that uses time series data to either better understand the data set or to predict future trends.
+
+- ANN (Artificial Neural Network) : Usually called neural networks (NNs) or neural nets, they are computing systems inspired by the biological neural networks that constitute animal brains (Neurons).
+
+- ACF (Auto-Correlation Function) : 
+The autocorrelation function is a statistical representation used to analyze the degree of similarity between a time series and a lagged 
+version of itself. This function allows the analyst to compare the current value of a data set to its past value. To use this function, the analyst uses the same time series and compares it against a lagged version of itself over one or more time periods. They assess the strength of the correlation between these different versions to uncover trends and patterns that allow them to evaluate the strength of the relationship between two or more variables.
+
+- PACF (Partial Auto-Correlation Function) :
+In time series analysis, the partial autocorrelation function (PACF) gives the partial correlation of a stationary time series with its own
+lagged values, regressed the values of the time series at all shorter lags. It contrasts with the autocorrelation function, which does not 
+control for other lags.
+
+-------------------------------------------------------------------------------------------
+🟩Paper [2] :
+------------
+
+- Adaptive Fourier Decomposition (AFD) : 
+The Fourier decomposition is the classical tool for decomposing a given surface or more generally a signal into its basic components. Using Fourier decomposition the surface is broken down into different scales using a set of sine and cosine functions with different frequencies. AFD uses adaptive basis to achieve the fast energy convergence.
+
+- Metaheuristics are strategies that guide the search process. The goal is to efficiently explore the search space in order to find near–optimal solutions.
+
+- Fourier analysis converts a signal from its original domain (often time or space) to a representation in the frequency domain and vice versa.
+
+- Sine Cosine Optimization : The algorithm generates various initial random solutions and asks them to shift towards the best solution using a mathematical model based on sine and cosine functions.
+
+-------------------------------------------------------------------------------------------
+🟩Paper [3] :
+------------
+
+- Holt-Winters exponential smoothing : 
+The Holt-Winters method uses exponential smoothing to encode lots of values from the past and use them to predict “typical” values for the 
+present and future. Exponential smoothing refers to the use of an exponentially weighted moving average (EWMA) to “smooth” a time series.
+
+- Fruit fly optimization process : 
+The fruit fly optimization algorithm (FOA) was a meta-heuristic algorithm which is inspired by the foraging behavior of fruit fly. Fruit fly relies on vision and smell to position food during foraging. FOA searches for solution space by mimicking the way of fruit fly flight when solving optimization problems.
+
+- The genetic algorithm (GA) is a method for solving both constrained and unconstrained optimization problems that is based on natural selection, the process that drives biological evolution. Genetic Algorithms (GAs) are used to optimize free parameters of SVR. The experimental results indicate that GA-SVR can achieve better forecasting accuracy and performance than traditional SVR and artificial neural network (ANN) prediction models.
+
+-------------------------------------------------------------------------------------------
+🟩Paper [4] :
+------------
+
+- Temporal Aggregation (MTA) : The situation in which a variable that evolves through time can not be observed at all dates.
+
+- Multiple Aggregation Prediction Algorithm (MAPA) : MAPA can be seen as a three step procedure, where in the first step the original time series is aggregated in multiple aggregation levels using non-overlapping means of length k. The mean is used instead of the sum, as it retains the scale of the series across the various aggregation levels. 
+
+- Hierarchical forecasting :  It is the process of generating coherent forecasts (or reconciling incoherent forecasts) that allows individual time series to be forecasted individually while still preserving the relationships within the hierarchy.
+
+- Cross-sectional refers to hierarchies that include different time series of the same sampling frequency across various demarcations, such as product categories, geographical regions, variable components, etc.
+
+- (Flaw) MTA & MAPA : the exact demand from a specific region can't be ascertained, because it is aggregated.
+
+-------------------------------------------------------------------------------------------
+🟩Paper [5] :
+------------
+
+- Data granularity is a measure of the level of detail in a data structure. In time-series data, for example, the granularity of measurement might be based on intervals of years, months, weeks, days, or hours.
+
+- Boosted Tree : Boosting means that each tree is dependent on prior trees. The algorithm learns by fitting the residual of the trees that preceded it. Thus, boosting in a decision tree ensemble tends to improve accuracy with some small risk of less coverage.
+
+- SVM : SVM or Support Vector Machine is a linear model for classification and regression problems. It can solve linear and non-linear problems and work well for many practical problems. The idea of SVM is simple: The algorithm creates a line or a hyperplane which separates the data into classes.
+
+- The Gaussian Processes Classifier is a classification machine learning algorithm. Gaussian Processes are a generalization of the Gaussian probability distribution and can be used as the basis for sophisticated non-parametric machine learning algorithms for classification and regression.
+
+- Random Forest : Random forest is a commonly-used machine learning algorithm, which combines the output of multiple decision trees to reach a single result.
+
+-------------------------------------------------------------------------------------------
+🟩Paper [6] :
+------------
+
+- Rough Set Theory : Rough set theory has been a methodology of database mining or knowledge discovery in relational databases. In its abstract form, it is a new area of uncertainty mathematics closely related to fuzzy theory. We can use rough set approach to discover structural relationship within imprecise and noisy data.
+
+- Deep Neural Network : A deep neural network (DNN) is an ANN with multiple hidden layers between the input and output layers. Similar to shallow ANNs, DNNs can model complex non-linear relationships.
+
+- Backpropagation is a process involved in training a neural network. It involves taking the error rate of a forward propagation and feeding this loss backward through the neural network layers to fine-tune the weights. Backpropagation is the essence of neural net training.
+
+- Elman neural network is a kind of feedback neural network; based on BP neural network hidden layer adds an undertake layer, as the delay operator, the purpose of memory, so that the network system has ability to adapt to the time-varying dynamic characteristics and has strong global stability.
+
+- A fuzzy neural network or neuro-fuzzy system is a learning machine that finds the parameters of a fuzzy system (i.e., fuzzy sets, fuzzy rules) by exploiting approximation techniques from neural networks.
+
+-------------------------------------------------------------------------------------------
+🟩Paper [7] :
+------------
+
+- K-Nearest Neighbour (K-NN) : a non-parametric, supervised learning classifier, which uses proximity to make classifications or predictions about the grouping of an individual data point.
+
+- RMSE (Root Mean Squared Error) : the standard deviation of the residuals (prediction errors). Residuals are a measure of how far from the regression line data points are; RMSE is a measure of how spread out these residuals are.
+
+- NRMSE (Normalized RMSE) : Normalizing the RMSE facilitates the comparison between datasets or models with different scales. 
+
+- MAPE (Mean Absolute Percentage Error) : It measures the accuracy as a percentage, and can be calculated as the average absolute percent error for each time period minus actual values divided by actual values.
+
+-------------------------------------------------------------------------------------------
+🟩Paper [8] :
+------------
+
+- Dynamic Regression : Similar to Regression Analysis, but it is believed to produce more realistic results because it emphasizes the ripple effects, the input variables can have on the dependent variable.
+
+- Prophet : a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects.
+
+- Seasonal Autoregressive Integrated Moving Average (SARIMA) : an extension of ARIMA that explicitly supports univariate time series data with a seasonal component.
+
+- ⚡⚡Bootstrapping is a term used in business to refer to the process of using only existing resources, such as personal savings, personal computing equipment, and garage space, to start and grow a company.
+
+-------------------------------------------------------------------------------------------
+🟩Paper [9] : 
+------------
+
+- Ensemble-based machine learning methods : techniques that aim at improving the accuracy of results in models by combining multiple models instead of using a single model. The combined models increase the accuracy of the results significantly. This has boosted the popularity of ensemble methods in machine learning.
+
+- ⚡⚡Quantile : Each of any set of values of a variate which divide a frequency distribution into equal groups, each containing the same fraction of the total population.
+
+- Quantile Random Forest : Quantile regression forests (QRF) is an extension of random forests that provides non-parametric estimates of the median predicted value as well as prediction quantiles. It therefore allows spatially explicit non-parametric estimates of model uncertainty.
+
+- Bagging and Boosting Methods : Bagging is used when our objective is to reduce the variance of a decision tree. Here the concept is to create a few subsets of data from the training sample, which is chosen randomly with replacement. Now each collection of subset data is used to prepare their decision trees thus, we end up with an ensemble of various models. The average of all the assumptions from numerous tress is used, which is more powerful than a single decision tree. Boosting is another ensemble procedure to make a collection of predictors. In other words, we fit consecutive trees, usually random samples, and at each step, the objective is to solve net error from the prior trees.
+
+-----------------------------------------------------------------------
+🟩Paper [10] : 
+-------------
+
+- ANN : 🔲EXPLAIN wrt earlier definition
+
+- ARIMA EXTRAS
+  >> Persistence Forecast : A forecast that the current weather condition will persist and that future weather will be the same as the present.
