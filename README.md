@@ -44,7 +44,6 @@ The projects will help you understand some key concepts of Computer Science and 
 - **Microsoft Visual Studio Code**
 - **Human Computer Interaction**
 <br><br>
-> <mark>***NOTE***</mark> : More detailed information on what tools and platforms were used in each project will be provided in the respective `README` files.
 
 I hope you can extract the most out of this repo. I will try to keep on updating it to make it more concise for you.
 <br><br><br>
