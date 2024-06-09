@@ -23,7 +23,6 @@ The projects will help you gain idea about some key concepts of `Information Tec
  - ***Machine Learning***
  - ***Artificial Intelligence***
 
-> <mark>***NOTE***</mark> : More detailed information on what tools and platforms were used in each project is provided in the respective projects' documentation. Only those projects that contains the source code have detailed information about the same in the directory's `README` files.
 <br>
 
 I hope you can extract the most out of this repo. I will try to regularly update this repo's contents to make it more concise for you.
