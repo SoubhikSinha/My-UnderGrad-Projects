@@ -24,7 +24,7 @@ The projects will help you gain idea about some key concepts of `Information Tec
 
 <br>
 
-I hope you can extract the most out of this repo. I will try to regularly update this repo's contents to make it more concise for you.
+I hope you can extract the most out of this repo. I will try to regularly update it's contents to make it more useful for you.
 <br><br>
 
 Thank You - Happy Learning !!!
