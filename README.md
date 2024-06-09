@@ -7,7 +7,7 @@ Welcome to my Under-Grad Project Repository. This is a store-house of all my pro
 
 This repo will be beneficial to those (*especially to sopohomores, juniors and seniors*) who have just started getting their hands dirty to learn something practically.
 
-> <mark>***NOTE***</mark> : Most of the project's source codes are not available because I figured out way later than I should have that, I needed to save them for future reference. Thus, apologies in advance ! But you can still extract a lot from the project's documentation - they are pretty brief to help you understand the work done.
+> <mark>***NOTE***</mark> : Most of the project's source code is not available because I realized too late that I needed to save it for future reference. Apologies for the inconvenience. However, you can still gain a lot from the project's documentation, which is concise and should help you understand the work done.
 
 The projects will help you gain idea about some key concepts of `Information Technology` and also the usage of some important tools and platforms. Below is the list of the sub-realms I touched 🔽
 > <mark>***NOTE***</mark> : Don't go too much into the sequence in which the "entities" are mentioned below. It's just a list for your reference.
