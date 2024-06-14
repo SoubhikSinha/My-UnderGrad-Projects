@@ -1,3 +1,4 @@
+
 # Under-Grad Project Repository
 <br>
 
@@ -7,24 +8,9 @@ Welcome to my Under-Grad Project Repository. This is a store-house of all my pro
 
 This repo will be beneficial to those (*especially to sopohomores, juniors and seniors*) who have just started getting their hands dirty to learn something practically.
 
-> <mark>***NOTE***</mark> : Most of the project's source code is not available because I realized too late that I needed to save it for future reference. Apologies for the inconvenience. However, you can still gain a lot from every project's documentation(s), which is concise and should help you understand the work done.
+> <mark>***NOTE***</mark> : Most of the project's source code is not available because I realized too late that I needed to save it for future reference. Apologies for the inconvenience ! - However, you can still gain a lot from every project's documentation(s), which is concise and should help you understand the work done.
 
-The projects will help you gain idea about some key concepts of `Information Technology` and also the usage of some important tools and platforms. Below is the list of the sub-realms I touched 🔽
+The projects will help you gain idea about some key sub-realms of `Information Technology` and also the usage of some important tools and platforms. Below are the list of projects in this repository and a summary about them 🔽<br><br>
 
- - ***Web Technologies***
- - ***Network and Information Security***
- - ***Advanced C Programming***
- - ***Database Management Systems***
- - ***Information Secuirty Management***
- - ***Information Security Analysis and Audit***
- - ***Open Source Programming***
- - ***Human Computer Interaction***
- - ***Machine Learning***
- - ***Artificial Intelligence***
-
-<br>
-
-I hope you can extract the most out of this repo. I will try to regularly update it's contents to make it more useful for you.
-<br><br>
-
-Thank You - Happy Learning !!!
+### **[Student Behavioral Analysis via Emotional Speech Recognition](https://github.com/sricks404/My-UnderGrad-Projects/blob/main/Student%20Behavioral%20Analysis%20via%20Emotional%20Speech%20Recognition%20(Machine%20Learning).pdf) - Machine Learning 🔻**<br>
+This project aims to analyze and predict the emotions expressed by students during their interactions with teachers in online classes. ​ The goal is to understand the students' understanding of the topics being taught based on their tone of speech. ​ The project focuses on recognizing emotions such as <i>neutral, anger, joy, and sorrow</i> from the students' spoken replies. ​This project follows a technical explanation path and involves several steps and techniques. ​ Data augmentation is used to generate fresh training examples by adding tiny perturbations to the original dataset. ​ Four data augmentation strategies are employed : <i><u>noise, shifting, pitch shifting, and time stretching</u></i>. ​ These techniques are applied to the audio data before generating [Mel Frequency Cepstral Coefficients (MFCC) features](https://medium.com/@derutycsl/intuitive-understanding-of-mfccs-836d36a1f779), which are used to train the deep learning model. The MFCC feature extraction technique involves several steps such as <i>[pre-emphasis](https://jonathan-hui.medium.com/speech-recognition-feature-extraction-mfcc-plp-5455f5a69dd9), [framing](https://medium.com/@tanveer9812/mfccs-made-easy-7ef383006040), [windowing](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.aircconline.com/sipij/V4N4/4413sipij08.pdf), [Fast Fourier Transform (FFT)](https://medium.com/swlh/the-fast-fourier-transform-fft-5e96cf637c38), [Mel Scale Filter Bank](https://vtiya.medium.com/mfcc-801a9fa53617), low-energy computation, and [Discrete Cosine Transform (DCT)](https://medium.com/@derutycsl/intuitive-understanding-of-mfccs-836d36a1f779)</i>. ​ These steps help transform the audio recordings into a format that the model can understand. ​This project utilizes a [Convolutional Neural Network (CNN)](https://towardsdatascience.com/convolutional-neural-networks-explained-9cc5188c4939) model for speech recognition. ​ The model receives training data, including expression labels, and undergoes intensity normalization. ​ The data is then split into train and test groups, and the CNN model is built and trained using the training data. ​ The trained model is used to predict the emotions expressed in the students' speech. ​This project references several research studies that have explored similar topics, including the use of [hybrid neural networks](https://medium.com/the-modern-scientist/exploring-the-potential-of-hybrid-deep-neural-networks-8e013ea0bafe), [deep neural networks](https://www.sciencedirect.com/topics/computer-science/deep-neural-network), and CNN algorithms for speech emotion recognition. ​ The studies highlight the use of different datasets, data augmentation techniques, and feature extraction methods to improve the accuracy of emotion recognition. ​This project includes code implementation and analysis, including data visualization, data augmentation, MFCC extraction, model training, and evaluation. ​ The results of testing the trained model on the testing dataset are summarized in a table, showing the testing accuracy for various emotions. ​In conclusion, this project demonstrates the effectiveness of the CNN model in recognizing emotions from students' speech. ​ The overall accuracy of the model is <mark><b>`87.80%`</b></mark>, with higher accuracy observed for female emotions compared to male emotions. ​ The project highlights the potential of using machine learning techniques to analyze student behavior and emotions in online learning environments.
