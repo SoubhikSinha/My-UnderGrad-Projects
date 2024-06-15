@@ -1,5 +1,3 @@
-
-
 # Under-Grad Project Repository
 <br>
 
@@ -60,6 +58,12 @@ This project focuses on developing a method to anonymize facial images for priva
 ### **[Library Management System](https://github.com/sricks404/My-UnderGrad-Projects/blob/main/Library%20Management%20System%20(C%20Programming).pdf) - C Programming🔻**<br>
 
 This project is an advanced C programming application aimed at simplifying library operations. The system incorporates key C programming concepts like structures, file handling, strings, arrays, pointers, functions, loops, and conditional statements. The application is menu-driven and offers several functionalities: displaying a welcome message, user authentication, adding books to the database, searching for books, viewing book information, deleting books, and updating user credentials. Upon launch, users see a welcome screen and proceed to a login page, where incorrect credentials entered thrice lead to a login failure message. The main menu provides options for managing books and user credentials, including adding book details such as <i>Book ID, Book Name, Author Name, Student Name, Date of adding, Searching for books by Name, Viewing all books with full details, Deleting books by Book ID, and Updating user passwords</i>. Users can exit the application after completing their tasks. The system ensures efficient and organized library management, reducing the complexity and confusion associated with traditional methods.
+<br>
+<br>
+
+### **[Library Management System](https://github.com/sricks404/My-UnderGrad-Projects/blob/main/Library%20Management%20System%20(DBMS).pdf) - Database Management System (DBMS)🔻**<br>
+
+This project aims to modernize traditional library systems by designing and implementing a comprehensive database to streamline library operations. This system addresses the limitations of manual record-keeping by ensuring data safety, ease of access, and efficient management of books and user records. It features functionalities such as real-time book availability, overdue fine tracking, and user management. The database includes entities for <i>libraries, branches, books, authors, publishers, staff, borrowers, and visitors</i>, with specified relationships and constraints. The project outlines scenarios for <i>data removal, updates, and retrievals</i>, ensuring robust database interactions. Additionally, it details the creation of [SQL](https://www.w3schools.com/sql/) queries and [PL/SQL](https://www.geeksforgeeks.org/plsql-introduction/) functions and procedures to demonstrate the system's capabilities in handling complex data operations, using [Oracle database 11g](https://www.oracle.com/database/technologies/database-11g-express-edition.html) database platform.
 <br>
 <br>
 
